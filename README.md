@@ -1,5 +1,5 @@
 # Remake-of-Grep-Command
-![image](https://cloud.githubusercontent.com/assets/10437615/12535275/cd92380e-c24b-11e5-86a1-c6aabd868606.png,"Remake of Grep")
+![image](https://cloud.githubusercontent.com/assets/10437615/12535275/cd92380e-c24b-11e5-86a1-c6aabd868606.png "Remake of Grep")
 ![image](https://cloud.githubusercontent.com/assets/10437615/12535278/d9fd1654-c24b-11e5-9957-add8e43741dd.png)
 ![image](https://cloud.githubusercontent.com/assets/10437615/12535307/7736594e-c24c-11e5-99a7-2b4e92c5ec38.png)
 ![image](https://cloud.githubusercontent.com/assets/10437615/12535290/10ed23c0-c24c-11e5-916e-1e94c61633e0.png)
