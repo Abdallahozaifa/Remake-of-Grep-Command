@@ -11,7 +11,6 @@
  *Due Time: 12:00, Thursday, January, 2016
  *
  *Time of Last Modification: 2:50, Thursday, January 24, 2016
-
  *Academic Integrity Statement: I certify that, while others may have assisted me in brain storming, debugging and validating this program, the program itself is my own work. I understand that submitting code which is the work of other individuals is a violation of the course Academic Integrity Policy and may result in a zero credit for the assignment, or course failure and a report to the Academic Dishonesty Board. I also understand that if I knowingly give my original work to another individual that it could also result in a zero credit for the assignment, or course failure and a report to the Academic Dishonesty Board. See Academic Integrity Procedural Guidelines at:  
 https://psbehrend.psu.edu/intranet/faculty-resources/academic-integrity/academic-integrity-procedural-guidelines
  
@@ -94,7 +93,7 @@ void searchElement(int argc, char *argv[], bool countOn, bool lineNumberOn){
                         // iterates through each character in the file line to change the color of text for the target word
                         for(j=0;j<fileLineSize;j++){
                             // if target letter is hit change the text color on the terminal otherwise print it normally
-                            if(j >= wordMatchStartPos && j<= wordMatchEndPos){
+                            if(j >= wordMatchStartPos && j< wordMatchEndPos){
                                 printf("\033[1;31m%c\033[0m", fileline[j]);                 
                             }else{
                                 printf("%c",fileline[j]);
@@ -126,36 +125,25 @@ int getLength(char array[]){
 }
 
 /** Output Below!:
-
 hozaifa@hozaifa-UX31A:~/Desktop/Cmpen441/lab2$ gcc -o lab2 lab2.c
-
 hozaifa@hozaifa-UX31A:~/Desktop/Cmpen441/lab2$ ./lab2 -c Hozaifa cool.txt fun.txt
 Occurences: 2
-
 hozaifa@hozaifa-UX31A:~/Desktop/Cmpen441/lab2$ ./lab2 Hozaifa cool.txt fun.txt
 fun.txt: Hozaifa is sweet
 cool.txt: Hozaifa Abdalla
-
 hozaifa@hozaifa-UX31A:~/Desktop/Cmpen441/lab2$ ./lab2 Hozaifa cool.txt 
 cool.txt: Hozaifa Abdalla
-
 hozaifa@hozaifa-UX31A:~/Desktop/Cmpen441/lab2$ ./lab2  cool.tx11 
 Atleast 3 parameters are required!
-
 hozaifa@hozaifa-UX31A:~/Desktop/Cmpen441/lab2$ ./lab2 Hozaifa cool.txt23 
 Error retrieving file, error number is 2
-
 !hozaifa@hozaifa-UX31A:~/Desktop/Cmpen441/lab2$ ./lab2 Abdalla cool.txt 
 cool.txt: Hozaifa Abdalla
-
 hozaifa@hozaifa-UX31A:~/Desktop/Cmpen441/lab2$ ./lab2 -c Abdalla cool.txt 
 Occurences: 1
-
 hozaifa@hozaifa-UX31A:~/Desktop/Cmpen441/lab2$ ./lab2 -c software cool.txt 
 Occurences: 7
-
 hozaifa@hozaifa-UX31A:~/Desktop/Cmpen441/lab2$ ./lab2 software cool.txt 
-
 cool.txt: Software engineering is the study and an application of engineering to the design, development and maintenance of software.[1][2][3]
 cool.txt: Typical formal definitions of software engineering are:
 cool.txt: "research, design, develop, and test operating systems-level software, compilers, and network distribution software for medical, industrial, military, communications, aerospace, business, scientific, and general computing applications."[4]
@@ -163,7 +151,6 @@ cool.txt: "the systematic application of scientific and technological knowledge,
 cool.txt: "the application of a systematic, disciplined, quantifiable approach to the development, operation, and maintenance of software";[6]
 cool.txt: "an engineering discipline that is concerned with all aspects of software production";[7]
 cool.txt: and "the establishment and use of sound engineering principles in order to economically obtain software that is reliable and works efficiently on real machines.
-
 hozaifa@hozaifa-UX31A:~/Desktop/Cmpen441/lab2$ ./lab2 -L software cool.txt
  
 cool.txt 4: Software engineering is the study and an application of engineering to the design, development and maintenance of software.[1][2][3]
@@ -173,5 +160,4 @@ cool.txt 7: "the systematic application of scientific and technological knowledg
 cool.txt 8: "the application of a systematic, disciplined, quantifiable approach to the development, operation, and maintenance of software";[6]
 cool.txt 9: "an engineering discipline that is concerned with all aspects of software production";[7]
 cool.txt 10: and "the establishment and use of sound engineering principles in order to economically obtain software that is reliable and works efficiently on real machines.		
-
 */
